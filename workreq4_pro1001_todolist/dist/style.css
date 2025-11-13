@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Wire+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #faf6f1;
+  color: #9a856e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  margin: 0;
+  padding: 40px 20px;
+  letter-spacing: .5px;
+}
+
+h1 {
+   font-family: "Wire One", sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-size: 6rem;
+  margin-bottom: 50px;
+  margin-top: 1rem;
+  color: #3c2f23;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.container {
+  background: #fffaf5;
+  border: 1px solid #e0d4c2;
+  border-radius: 16px;
+  padding: 30px 25px;
+  max-width: 700px;
+  width: 100%;
+  box-shadow: 0 6px 18px rgba(75, 59, 42, 0.1);
+}
+
+input[type="text"] {
+  width: 73%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #d7c5b2;
+  font-size: 1rem;
+  background-color: #fffdf9;
+  color: #3c2f23;
+  margin-right: 2.5rem;
+}
+input::placeholder {
+  font-family: "Poppins", sans-serif;
+  color: #9a856e;   
+  opacity: 0.8;
+  font-size: 1rem; 
+  letter-spacing: 0.5px;
+}
+input[type="text"]:focus {
+  outline: none; 
+  border: 1px solid #d7c5b2; 
+  box-shadow: none;    
+}
+
+button {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  background-color: #d6a77a;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 10px;
+  width: 100px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #b9865f;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 50px;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fffdf9;
+  border: 1px solid #e6d8c9;
+  border-radius: 10px;
+  padding: 10px 14px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s;
+}
+
+.todo-item:hover {
+  background-color: #f6eee4;
+}
+
+.todo-text {
+  font-size: 1rem;
+  word-break: break-word;
+}
+
+.delete-button {
+  font-family: "Wire One", sans-serif;
+  background-color: #f1d0b5;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+  background-color: #e5b894;
+}
+.delete-button::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 5px;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: rotate(-45deg);
+  margin-bottom: 6px;
+}
